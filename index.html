@@ -4,16 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Weather Checker</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="container">
-        <h1>Weather Checker</h1>
-        <form id="weatherForm">
-            <input type="text" id="city" placeholder="Enter a city" required>
-            <button type="submit">Check Weather</button>
+    <div class="container mt-5">
+        <h1 class="text-center">Weather Checker</h1>
+        <form id="weatherForm" class="form-inline justify-content-center mt-4">
+            <input type="text" id="city" placeholder="Enter a city" required class="form-control mr-2">
+            <button type="submit" class="btn btn-primary">Check Weather</button>
         </form>
-        <div id="weatherResult"></div>
+        <div id="weatherResult" class="mt-4"></div>
     </div>
     <script src="app.js"></script>
 </body>
